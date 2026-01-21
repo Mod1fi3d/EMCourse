@@ -19,7 +19,7 @@ double DataSeries::max() const
     double max = data_[0];
     for (double v : data_) {
         if (max < v){
-            max = v;
+            max = v+1;
             }        
     }
     return max;
